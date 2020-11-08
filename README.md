@@ -1,3 +1,3 @@
 # matinwood.github.io
-[build-info](https://travis-ci.org/userName/repoName.svg)
+[![Build Status](https://travis-ci.com/MatinWood/matinwood.github.io.svg?branch=main)](https://travis-ci.com/MatinWood/matinwood.github.io)
 

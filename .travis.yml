@@ -2,7 +2,10 @@ sudo: false
 language: node_js
 node_js:
   - 10 # use nodejs v10 LTS
-cache: npm
+cache:
+  npm
+  directories:
+    - node_modules
 branches:
   only:
     - main # build master branch only
@@ -17,3 +20,8 @@ deploy:
   on:
     branch: gh-pages
   local-dir: public
+notifications:
+  email:
+  - matiantan@icloud.com
+  on_success: change
+  on_failure: always
