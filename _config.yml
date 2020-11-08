@@ -8,12 +8,12 @@ subtitle: ''
 description: ''
 keywords:
 author: Matin Wood
-language: zh-CN
+language: zh-Hans
 timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://matinwood.github.io
+url: https://matinwood.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
