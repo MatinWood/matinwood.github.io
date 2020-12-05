@@ -10,7 +10,8 @@ categories: 技术
 
 pytest.ini
 
-`[pytest]
+``````ini
+[pytest]
 required_plugins = pytest-flask>=1.1.0 pytest-html>=3.0.0 pytest-xdist>=2.0.0
 
 addopts = -v --html=tests/report.html -n 4 -rxXs
@@ -24,4 +25,6 @@ markers =
   webtest:  Run the webtest case
   hello: Run the hello case
 
- xfail_strict = true`
+ xfail_strict = true
+``````
+
