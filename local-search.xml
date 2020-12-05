@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>python3-pytest</title>
+    <link href="/2020/12/05/python3-pytest/"/>
+    <url>/2020/12/05/python3-pytest/</url>
+    
+    <content type="html"><![CDATA[<p>配置文件：</p><p>pytest.ini</p><p>`[pytest]<br>required_plugins = pytest-flask&gt;=1.1.0 pytest-html&gt;=3.0.0 pytest-xdist&gt;=2.0.0</p><p>addopts = -v –html=tests/report.html -n 4 -rxXs<br>; -v 详细信息<br>; -html 输出HTML报告<br>; -n 4 并发4<br>; -rxXs  # show extra info on xfailed, xpassed, and skipped tests<br>testpaths = tests</p><p>markers =<br>  webtest:  Run the webtest case<br>  hello: Run the hello case</p><p> xfail_strict = true`</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>python3</tag>
+      
+      <tag>pytest</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>webpack</title>
     <link href="/2020/11/16/webpack/"/>
     <url>/2020/11/16/webpack/</url>
