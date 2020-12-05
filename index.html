@@ -192,8 +192,13 @@
           
           配置文件：
 pytest.ini
-`[pytest]required_plugins = pytest-flask&gt;=1.1.0 pytest-html&gt;=3.0.0 pytest-xdist&gt;=2.0.0
-addopts = -v –html=tests/report.html -n 4 -rxXs; -v 详细信息; -html 输出HTML报告; -n 4 并发4; -rx
+[pytest]
+required_plugins = pytest-flask&gt;=1.1.0 pytest-html&gt;=3.0.0 pytest-xdist&gt;=2.0.0
+
+addopts = -v --html=tests/report.html -n 4 -rxXs
+; -v 详细信息
+; -html 输出HTML报告
+; -n 4 并发4
         </a>
       </p>
 

@@ -184,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      75 字
+      76 字
     </span>
   
 
@@ -229,10 +229,22 @@
             <div class="markdown-body">
               <p>配置文件：</p>
 <p>pytest.ini</p>
-<p>`[pytest]<br>required_plugins = pytest-flask&gt;=1.1.0 pytest-html&gt;=3.0.0 pytest-xdist&gt;=2.0.0</p>
-<p>addopts = -v –html=tests/report.html -n 4 -rxXs<br>; -v 详细信息<br>; -html 输出HTML报告<br>; -n 4 并发4<br>; -rxXs  # show extra info on xfailed, xpassed, and skipped tests<br>testpaths = tests</p>
-<p>markers =<br>  webtest:  Run the webtest case<br>  hello: Run the hello case</p>
-<p> xfail_strict = true`</p>
+<pre><code class="hljs ini"><span class="hljs-section">[pytest]</span>
+<span class="hljs-attr">required_plugins</span> = pytest-flask&gt;=<span class="hljs-number">1.1</span>.<span class="hljs-number">0</span> pytest-html&gt;=<span class="hljs-number">3.0</span>.<span class="hljs-number">0</span> pytest-xdist&gt;=<span class="hljs-number">2.0</span>.<span class="hljs-number">0</span>
+
+<span class="hljs-attr">addopts</span> = -v --html=tests/report.html -n <span class="hljs-number">4</span> -rxXs
+<span class="hljs-comment">; -v 详细信息</span>
+<span class="hljs-comment">; -html 输出HTML报告</span>
+<span class="hljs-comment">; -n 4 并发4</span>
+<span class="hljs-comment">; -rxXs  # show extra info on xfailed, xpassed, and skipped tests</span>
+<span class="hljs-attr">testpaths</span> = tests
+
+markers =
+  webtest:  Run the webtest case
+  hello: Run the hello case
+
+ <span class="hljs-attr">xfail_strict</span> = <span class="hljs-literal">true</span></code></pre>
+
 
             </div>
             <hr>
